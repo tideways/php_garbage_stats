@@ -9,7 +9,8 @@ expose them to userland.
 
 ## Requirements
 
-Currently only works on Linux
+- Linux
+- PHP 7+
 
 ## Installation
 
