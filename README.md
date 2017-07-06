@@ -33,13 +33,17 @@ If you have multiple PHP versions the setup boils down to:
 
 Enable the gc run collection by setting the ini variable:
 
-``php
+```php
+<?php
+
 ini_set('gc_stats.enable', 1);
 ```
 
 To access the statistics call `$retun = gc_stats()`:
 
 ```php
+<?php
+
 gc_collect_cycles();
 $stats = gc_stats();
 var_dump($stats);
