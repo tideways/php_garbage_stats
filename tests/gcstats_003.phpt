@@ -28,10 +28,14 @@ var_dump($data);
 --EXPECTF--
 array(4) {
   [0]=>
-  array(4) {
+  array(6) {
     ["collected"]=>
     int(9998)
     ["duration"]=>
+    int(%d)
+    ["memory_before"]=>
+    int(%d)
+    ["memory_after"]=>
     int(%d)
     ["function"]=>
     string(3) "bar"
@@ -58,10 +62,14 @@ array(4) {
     }
   }
   [1]=>
-  array(4) {
+  array(6) {
     ["collected"]=>
     int(10000)
     ["duration"]=>
+    int(%d)
+    ["memory_before"]=>
+    int(%d)
+    ["memory_after"]=>
     int(%d)
     ["function"]=>
     string(3) "bar"
@@ -88,10 +96,14 @@ array(4) {
     }
   }
   [2]=>
-  array(4) {
+  array(6) {
     ["collected"]=>
     int(10000)
     ["duration"]=>
+    int(%d)
+    ["memory_before"]=>
+    int(%d)
+    ["memory_after"]=>
     int(%d)
     ["function"]=>
     string(3) "bar"
@@ -118,10 +130,14 @@ array(4) {
     }
   }
   [3]=>
-  array(4) {
+  array(6) {
     ["collected"]=>
     int(10000)
     ["duration"]=>
+    int(%d)
+    ["memory_before"]=>
+    int(%d)
+    ["memory_after"]=>
     int(%d)
     ["function"]=>
     string(3) "bar"

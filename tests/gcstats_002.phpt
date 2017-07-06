@@ -20,10 +20,14 @@ var_dump($data);
 --EXPECTF--
 array(1) {
   [0]=>
-  array(4) {
+  array(6) {
     ["collected"]=>
     int(200)
     ["duration"]=>
+    int(%d)
+    ["memory_before"]=>
+    int(%d)
+    ["memory_after"]=>
     int(%d)
     ["function"]=>
     string(17) "gc_collect_cycles"

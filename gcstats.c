@@ -34,6 +34,7 @@ int gc_stats_collect_cycles(void)
     zval run, stack;
     zend_execute_data *execute_data;
     zend_function *current_function;
+    long int memory;
     uint64_t start;
 
     if (!GSG(enabled)) {
@@ -42,6 +43,7 @@ int gc_stats_collect_cycles(void)
 
     collected = GC_G(collected);
     start = clock_get_monotonic();
+    memory = zend_memory_usage(0);
     execute_data = EG(current_execute_data);
 
     ret = original_gc_collect_cycles();
@@ -50,6 +52,8 @@ int gc_stats_collect_cycles(void)
 
     add_assoc_long(&run, "collected", GC_G(collected) - collected);
     add_assoc_long(&run, "duration", clock_get_monotonic() - start);
+    add_assoc_long(&run, "memory_before", memory);
+    add_assoc_long(&run, "memory_after", zend_memory_usage(0));
 
     current_function = execute_data->func;
 
