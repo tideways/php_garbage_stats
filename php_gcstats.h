@@ -9,6 +9,7 @@ extern zend_module_entry garbage_stats_module_entry;
 ZEND_BEGIN_MODULE_GLOBALS(garbage_stats)
     zval runs;
     int enabled;
+    int show_report;
 ZEND_END_MODULE_GLOBALS(garbage_stats)
 
 #ifdef ZTS

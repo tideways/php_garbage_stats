@@ -31,7 +31,21 @@ If you have multiple PHP versions the setup boils down to:
 
 ## Usage
 
-Enable the gc run collection by setting the ini variable:
+For CLI scripts, you can print out a report immediately from the extension without having to change the code:
+
+    $ php -dgc_stats.enable=1 -dgc_stats.show_report=1 my_script.php
+    ## Garbage Collection Statistics for PHP by Tideways ##
+    Use https://tideways.io to get realtime information about garbage collection in production.
+
+    Found 7 garbage collection runs in current script.
+
+    Collected | Efficency% | Duration | Memory Before | Memory After | Reduction% | Function
+    ----------|------------|----------|---------------|--------------|------------|---------
+            0 |     0.00 % |  0.01 ms |        365856 |       366352 |    -0.14 % | gc_collect_cycles
+        10000 |   100.00 % |  3.19 ms |       4651352 |       491848 |    89.43 % | foo
+         9000 |    90.00 % |  2.27 ms |       4694712 |       951208 |    79.74 % | Test::foo
+
+    Enable the gc run collection by setting the ini variable:
 
 ```php
 <?php
