@@ -47,7 +47,8 @@ To access the statistics call `$retun = gc_stats()`:
 gc_collect_cycles();
 $stats = gc_stats();
 var_dump($stats);
-/**
+
+/*
 array(1) {
   [0]=>
   array(6) {
