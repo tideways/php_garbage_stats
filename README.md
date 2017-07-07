@@ -12,6 +12,8 @@ We extracted this functionality from
 PHP applications. You can automatically collect information about garbage
 collector performance and efficiency in Tideways from production traffic.
 
+Blog Post: [How to optimize the PHP Garbage collector usage to improve memory and performance](https://tideways.io/profiler/blog/how-to-optimize-the-php-garbage-collector-usage-to-improve-memory-and-performance)
+
 ## Requirements
 
 - Linux
