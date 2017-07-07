@@ -50,7 +50,8 @@ For CLI scripts, you can print out a report immediately from the extension witho
         10000 |   100.00 % |  3.19 ms |       4651352 |       491848 |    89.43 % | foo
          9000 |    90.00 % |  2.27 ms |       4694712 |       951208 |    79.74 % | Test::foo
 
-    Enable the gc run collection by setting the ini variable:
+
+Enable the gc run collection by setting the ini variable:
 
 ```php
 <?php
