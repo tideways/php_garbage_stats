@@ -7,6 +7,11 @@ attempts to detect the ones with cycles that are not in use anymore and clean
 them up. The PHP engine keeps statistics about this internally, but doesn't
 expose them to userland.
 
+We extracted this functionality from
+[Tideways](https://app.tideways.io/register), our production profiler for your
+PHP applications. You can automatically collect information about garbage
+collector performance and efficiency in Tideways from production traffic.
+
 ## Requirements
 
 - Linux
