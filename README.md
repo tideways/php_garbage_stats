@@ -1,5 +1,9 @@
 # garbage collection statistics for PHP
 
+**DEPRECATED/UNMAINTAINED** The functionality of this extension is now [part of
+Xdebug version 2.6.0](https://xdebug.org/docs/garbage_collection). This
+extension is therefore going out of maintenance.
+
 Collect statistics about every run of the PHP garbage collector and its efficency.
 
 The PHP garbage collector runs when to many objects or arrays are in use and
